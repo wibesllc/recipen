@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReciPen Privacy Policy</title>
+  <style>
+    :root { --plum: #7A3B6B; --cream: #FAF7F2; --ink: #2B2326; --muted: #6B5E66; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font: 17px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+    h1 { color: var(--plum); font-size: 32px; margin: 0 0 4px; }
+    h2 { color: var(--plum); font-size: 22px; margin: 36px 0 8px; }
+    .meta { color: var(--muted); margin: 0 0 24px; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid #E6DCE2; }
+    th { color: var(--muted); font-weight: 600; }
+    a { color: var(--plum); }
+    .note { background: #F2E6EF; border-radius: 10px; padding: 12px 16px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>ReciPen Privacy Policy</h1>
+  <p class="meta">Wibes LLC · Effective October 27, 2026 · Contact: <a href="mailto:wibes.llc@gmail.com">wibes.llc@gmail.com</a></p>
+
+  <p>ReciPen keeps your recipes on your phone. There is no account, no sign-in and no advertising. This policy explains the small amount of data that leaves your device when you use the AI features, who processes it, and for how long it is kept.</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li>Your recipes, tags, dish photos and backups stay on your phone. We cannot see them.</li>
+    <li>When you use an AI feature, what it needs is sent to our server and on to our AI provider to produce the answer: the pages you photograph to import a recipe, the recipe text, your message, and any photo you attach in a chat. None of it is kept after the answer is returned.</li>
+    <li>The only identifier we hold is a random install id your phone generates, together with whether it is an iPhone or an Android phone. It is not your name, email, phone number or Apple ID.</li>
+    <li>We do not sell data, show ads, or track you across apps or websites.</li>
+  </ul>
+
+  <h2>What stays on your device</h2>
+  <p>Recipes you capture, type or import; their tags, notes and nutrition; dish photos; search; and the backup files you choose to export. Your device also reads the text on a photographed page itself (Google ML Kit, no network), which is kept with the recipe as its original text. Deleting the app deletes this data; backups you exported remain wherever you saved them.</p>
+
+  <h2>What is sent to our server, and why</h2>
+  <table>
+    <tr><th>Data</th><th>When</th><th>Why</th></tr>
+    <tr><td>The pages you photograph (resized) with the text your device read from them, pasted text, or the PDF or web page you share</td><td>When you import a recipe</td><td>To turn it into a structured recipe</td></tr>
+    <tr><td>A saved recipe's text, your messages, and photos you attach in a chat</td><td>When you use Ask about this recipe or Create a recipe</td><td>To answer you or write the recipe</td></tr>
+    <tr><td>A saved recipe's text</td><td>When you scale servings or estimate nutrition with AI</td><td>To compute the result</td></tr>
+    <tr><td>Your install id and platform (iPhone or Android)</td><td>With every AI request</td><td>To count usage, apply limits, and, with ReciPen Plus, recognise your subscription</td></tr>
+    <tr><td>A salted hash of your network address (not the address itself)</td><td>With every AI request</td><td>To limit abuse; it is kept for seven days and cannot be turned back into the address</td></tr>
+  </table>
+  <p>Dish photos you add to a recipe are never sent anywhere. Page photos are sent only when you import a recipe from them, and chat photos only when you attach one, each for that request alone.</p>
+
+  <h2>Who processes data for us</h2>
+  <table>
+    <tr><th>Provider</th><th>Role</th><th>What they receive</th></tr>
+    <tr><td>Anthropic</td><td>The AI model that produces answers and recipes</td><td>The page photos, recipe text, message and chat photo for the request. Anthropic is in the United States and processes this data under its data processing addendum: it deletes API inputs and outputs within 30 days, keeps them longer only if its abuse checks flag them, and does not use them to train its models.</td></tr>
+    <tr><td>Vercel</td><td>Hosts our server</td><td>The requests above, in transit, and short-lived server logs</td></tr>
+    <tr><td>Neon</td><td>Our database</td><td>Install ids, usage counts, and subscription state</td></tr>
+    <tr><td>RevenueCat</td><td>Processes ReciPen Plus subscriptions</td><td>Your install id and the purchase information Apple or Google provide; never your payment details, which stay with Apple or Google</td></tr>
+    <tr><td>Netlify</td><td>Hosts wibesllc.com, the page a shared recipe link opens</td><td>Standard web-server logs, which include the address of each page fetched, kept briefly</td></tr>
+    <tr><td>Slack</td><td>Carries our operational alerts and a weekly usage summary</td><td>Counts and install ids, nothing else</td></tr>
+  </table>
+
+  <h2>How long we keep things</h2>
+  <ul>
+    <li>Recipe text, messages and chat photos: not stored after the answer is returned. A copy of the answer is kept for one day so a request interrupted by a bad connection can be retried without charging you twice.</li>
+    <li>Request logs (install id, hashed network address, the kind of request, its estimated cost): seven days.</li>
+    <li>Usage counts per install and month, and subscription state: for as long as the install exists in our records.</li>
+  </ul>
+
+  <h2>Sharing a recipe as a link</h2>
+  <p>When you share a recipe as a link, the recipe itself is encoded inside the link. Nothing is uploaded to us, and we cannot see who you send it to. Anyone who has the link has the recipe, so share it as you would share the recipe itself. If the person does not have ReciPen, the link opens a page on wibesllc.com that shows the recipe; that page is served by Netlify, whose standard server logs record the address of each page fetched, including the link, for a short time.</p>
+
+  <h2>Where data is processed</h2>
+  <p>Our server, database and AI provider run in the United States. If you use ReciPen from the EU, the UK or elsewhere, the data described above is transferred there under the providers' standard data-protection contracts (standard contractual clauses). Wibes LLC is the controller of the install records described here.</p>
+
+  <h2>Purchases</h2>
+  <p>ReciPen Plus is sold through Apple's App Store or Google Play. Apple or Google handle payment and hold your payment details; we never see them. RevenueCat tells our server whether a subscription is active so the app can unlock Plus. You can manage or cancel a subscription in your App Store or Google Play account settings.</p>
+
+  <h2>AI answers and nutrition</h2>
+  <p>Recipes, substitutions and nutrition figures produced by the AI are estimates for home cooks, labelled as such in the app. They are not medical, dietary or allergy advice. Check ingredients yourself if you have an allergy or a medical condition.</p>
+
+  <h2>Children</h2>
+  <p>ReciPen is not directed at children under 13, and we do not knowingly collect data from them.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Use ReciPen without the AI features: capturing, typing, editing, searching and backing up recipes never send anything to us.</li>
+    <li>Delete the app to delete everything on your device.</li>
+    <li>To have the usage records for your install removed from our server, email us with the Support ID shown in the app's Settings. It identifies your install and nothing else.</li>
+    <li>The Diagnostics block in Settings, Help, is copied only when you tap it and goes only where you paste it. It holds the app version, your phone's system version, your Support ID, the server address, your plan and the last error the AI returned.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>All traffic between the app and our server uses HTTPS. Our server never exposes the AI provider's credentials to the app, applies per-install limits, and keeps the data described above to the minimum needed to run the service.</p>
+
+  <h2>Changes</h2>
+  <p>We will post any change to this policy at this address and update the effective date above. Material changes will also be noted in the app's release notes.</p>
+
+  <div class="note"><strong>Contact.</strong> Wibes LLC · <a href="mailto:wibes.llc@gmail.com">wibes.llc@gmail.com</a></div>
+</main>
+</body>
+</html>
